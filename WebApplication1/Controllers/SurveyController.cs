@@ -18,7 +18,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        [Route("/question/get")]
+        [Route("/api/question/get")]
         public IActionResult Get(int questionId)
         {
             try
@@ -37,7 +37,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        [Route("/result/save")]
+        [Route("/api/result/save")]
         public IActionResult SaveResult(CreateResultModel createModel)
         {
             try
